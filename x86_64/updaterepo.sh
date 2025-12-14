@@ -1,19 +1,19 @@
 #!/bin/bash
 
-rm buildra_repo*
+rm forgelinux_repo*
 
 echo "repo-add"
-repo-add -n -R buildra_repo.db.tar.gz *.pkg.tar.zst
+repo-add -n -R forgelinux_repo.db.tar.gz *.pkg.tar.zst
 
 sleep 1
 
-rm buildra_repo.db
+rm forgelinux_repo.db
 
-rm buildra_repo.files
+rm forgelinux_repo.files
 
-mv buildra_repo.db.tar.gz buildra_repo.db
+mv forgelinux_repo.db.tar.gz forgelinux_repo.db
 
-mv buildra_repo.files.tar.gz buildra_repo.files
+mv forgelinux_repo.files.tar.gz forgelinux_repo.files
 
 echo "####################################"
 echo "Repo Updated!!"
